@@ -75,6 +75,8 @@ conferindo o RGB, # ou nome das cores o tempo todo. Uma ajudinha pra eu não me 
 .carousel-item img {
   border-radius: 40px;
 }
+/* Quando clicar no botão de destaques, este ao invés de rolar de uma vez, vai fazer uma transição suave*/
+html { scroll-behavior: smooth; }
 /* Cards: borda em degradê rosa → ciano */
 .card {
   --bs-card-border-radius: 18px;
@@ -143,6 +145,11 @@ body {
 .card:hover .card-img-top {
   filter: brightness(0.6);           /* mexer no 0.6 aumenta ou diminui o fade*/
 }
+.accordion {
+  --bs-accordion-active-bg: var(--cartao);        /* fundo da pergunta aberta: roxo, como os cards */
+  --bs-accordion-active-color: var(--principal);  /* texto da pergunta aberta: rosa */
+}
+.email-color { color: var(--principal)}
 .rodape {
   background-color: var(--barra);
   border-top: 3px solid var(--principal);
@@ -187,6 +194,9 @@ essa opção,ok?*/
 @media (prefers-reduced-motion: reduce) {
   .card {
     transition: none;
+  }
+  html { 
+    scroll-behavior: auto; 
   }
   .card:hover {
     transform: none;

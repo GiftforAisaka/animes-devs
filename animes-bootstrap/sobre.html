@@ -70,6 +70,121 @@
        </div>
        </div>
         </section>
+        <!--Perguntas frequentes: accordion do Bootstrap (abre e fecha ao clicar). Solicitado pelo professor
+        no documento que foi nos repassado em aula. -->
+        <!--Uma breve explicação do funcionamento: data-bs-toggle="collapse": diz ao Bootstrap “este botão abre e fecha algo”.
+data-bs-target="#resposta1": diz o que vai fechar e abrir. O valor tem que ser igual ao ex: id="resposta1".-->
+<section class="mb-5">
+  <h2 class="titulo-secao">Perguntas Frequentes</h2>
+
+  <div class="accordion" id="perguntas">
+
+    <!--Pergunta 1-->
+    <div class="accordion-item">
+      <h3 class="accordion-header">
+        <button class="accordion-button collapsed" type="button"
+          data-bs-toggle="collapse" data-bs-target="#resposta1"
+          aria-expanded="false" aria-controls="resposta1">
+          O que os motivou a criar esse site?
+        </button>
+      </h3>
+      <div id="resposta1" class="accordion-collapse collapse" data-bs-parent="#perguntas">
+        <div class="accordion-body">
+          Resposta escrita por vocês.
+        </div>
+      </div>
+    </div>
+    <!-- OBSERVAÇÃO:Cada pergunta nova precisa de um id diferente (resposta3, resposta4...)
+     trocado nos três lugares: data-bs-target, aria-controls e id.-->
+
+    <!--Pergunta 2-->
+    <div class="accordion-item">
+      <h3 class="accordion-header">
+        <button class="accordion-button collapsed" type="button"
+          data-bs-toggle="collapse" data-bs-target="#resposta2"
+          aria-expanded="false" aria-controls="resposta2">
+          O que é a "temporada de outono"?
+        </button>
+      </h3>
+      <div id="resposta2" class="accordion-collapse collapse" data-bs-parent="#perguntas">
+        <div class="accordion-body">
+          O estilo de lançamento dos animes, consiste em ciclos divididos estacionalmente. Uma profusão de animes é lançada todos os anos pelos estudios responsáveis
+          e para manter a organização e definir ciclos de lançamento e produção, eles são divulgados e lançados nas plataformas sazonalmente. Por isso temos temporadas de Primavera
+          verão, outono e inverno! Mas lembre-se que por estarmos no hemisfério sul, as estações estarão invertidas, ok? Quando é Primavera em nosso continente, no deles é Outono!
+        </div>
+      </div>
+    </div>
+    <!--FIM DA PERGUNTA 2-->
+    <!--Pergunta 3-->
+    <div class="accordion-item">
+      <h3 class="accordion-header">
+        <button class="accordion-button collapsed" type="button"
+          data-bs-toggle="collapse" data-bs-target="#resposta3"
+          aria-expanded="false" aria-controls="resposta3">
+          Quais os animes favoritos de vocês?
+        </button>
+      </h3>
+      <div id="resposta3" class="accordion-collapse collapse" data-bs-parent="#perguntas">
+        <div class="accordion-body">
+          Você pode conferir nossos animes favoritos <a class="text-decoration-none" href="favsdev.html"> aqui</a>
+        </div>
+      </div>
+    </div>
+    <!--FIM DA PERGUNTA 3-->
+    <!--Pergunta 4-->
+    <div class="accordion-item">
+      <h3 class="accordion-header">
+        <button class="accordion-button collapsed" type="button"
+          data-bs-toggle="collapse" data-bs-target="#resposta4"
+          aria-expanded="false" aria-controls="resposta4">
+          Quem está por trás do projeto?
+        </button>
+      </h3>
+      <div id="resposta4" class="accordion-collapse collapse" data-bs-parent="#perguntas">
+        <div class="accordion-body">
+          Somos dois desenvolvedores apaixonados por tecnologia e pelo universo nerd. Adoramos ver animes nas horas vagas
+          e por isso decidimos criar esse projeto. Você pode saber um pouco mais sobre a gente visitando nossas redes sociais. Um pouco de spoiler?
+          Um é desenvolvedor backend e a outra está começando com Front-End. Legal, não é? Estamos orgulhosos desse projeto.
+        </div>
+      </div>
+    </div>
+    <!--FIM DA PERGUNTA 4-->
+    <!--Pergunta 5-->
+    <div class="accordion-item">
+      <h3 class="accordion-header">
+        <button class="accordion-button collapsed" type="button"
+          data-bs-toggle="collapse" data-bs-target="#resposta5"
+          aria-expanded="false" aria-controls="resposta5">
+          Em quais plataformas posso assistir os animes recomendados?
+        </button>
+      </h3>
+      <div id="resposta5" class="accordion-collapse collapse" data-bs-parent="#perguntas">
+        <div class="accordion-body">
+          Você pode conferir onde assistir os animes clicando no link abaixo da descrição de cada um deles, mas também
+          temos uma aba com recomendação de plataformas de streaming, basta clicar <a class="text-decoration-none" href="ondeassistir.html"> aqui</a>
+        </div>
+      </div>
+    </div>
+    <!--FIM DA PERGUNTA 5-->
+    <!--Pergunta 6-->
+    <div class="accordion-item">
+      <h3 class="accordion-header">
+        <button class="accordion-button collapsed" type="button"
+          data-bs-toggle="collapse" data-bs-target="#resposta6"
+          aria-expanded="false" aria-controls="resposta6">
+          Preciso de ajuda, como eu falo com os desenvolvedores?
+        </button>
+      </h3>
+      <div id="resposta6" class="accordion-collapse collapse" data-bs-parent="#perguntas">
+        <div class="accordion-body">
+          Você pode conversar com a gente enviando um email para: <span class="email-color">thuanne.profissional@gmail.com</span> ou <span class="email-color">andre_luiz018@yahoo.com.br</span>
+        </div>
+      </div>
+    </div>
+    <!--FIM DA PERGUNTA 6-->
+
+  </div>
+</section>
     </main>
     <footer class="rodape py-4">
     <!--Elemento pai-->

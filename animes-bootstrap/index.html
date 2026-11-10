@@ -58,8 +58,12 @@
     <section class="carrosel mb-5">
       <h1 class="text-center mt-5 titulo-secao">Um projeto Acadêmico pensado na comunidade Geek</h1>
       <p class="text-center">Um guia de temporadas feito especialmente pra você!</p>
+      <div class="text-center mb-4">
+        <!--Adição de um botão de destaques conforme solicitado pelo programa de aprendizado-->
+  <a class="btn btn-primary btn-lg" href="#destaques">Ver destaques</a>
+</div>
       <!--Carrossel com imagens dos animes da temporada passando sozinho - bootstrap-->
-      <div id="carrosselDestaques" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div id="carrosselDestaques" class="carousel slide carousel-fade">
         <!--Bolinhas de baixo: uma para cada slide-->
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carrosselDestaques" data-bs-slide-to="0" class="active"
@@ -142,7 +146,7 @@
       <p>É a nossa primeira vez trabalhando com um framework, e tem sido uma aventura bem divertida. Esperamos que vocês
         gostem. Nos vemos por aí!</p>
     </section>
-    <section class="populares mb-5">
+    <section class="populares mb-5" id="destaques">
       <!--Uma lista com imagens e breve descrição dos 6 animes em destaque na temporada
       de outono. Primavera pra quem está no hemisfério sul!-->
       <h2 class="titulo-secao">Destaques da Temporada</h2>
@@ -273,6 +277,11 @@
           de
           media query, mobile
           first, uso de flexbox e o framework Bootstrap</p>
+          <p class="small">
+            Imagens: Artes oficiais de divulgação de animes
+            Fonte: Crunchyroll, Prime vídeo e Netflix. 
+            Mascote ao fim da pagina: Elemento cedido por Canva
+          </p>
       </div>
   </footer>
   <script src="vendor/bootstrap.bundle.min.js"></script>
