@@ -42,12 +42,12 @@
             <li class="nav-item"><a class="nav-link" href="ondeassistir.html">Onde assistir</a></li>
           </ul>
 
-          <!--Barra de pesquisa: leva para animestemp.html?pesquisar=texto digitado. Método de pesquisa será implementado em JS-->
-          <form class="d-flex ms-lg-3" action="index.html" method="get" role="search">
+          <!--Barra de pesquisa: Ainda não está funcionando, precisa de um pouco mais de JS que ainda não sei...-->
+          <form class="d-flex ms-lg-3" action="index.html" method="get" role="search" onsubmit="return avisoBusca()">
             <label for="pesquisar" class="visually-hidden">Pesquisar</label>
             <input class="form-control me-2" type="search" id="pesquisar" name="pesquisar"
               placeholder="pesquisar anime...">
-            <button class="btn btn-primary" type="submit">Buscar</button>
+            <button class="btn btn-primary" type="submit" id="pesquisarcont">Buscar</button>
           </form>
         </div>
       </div>
@@ -122,6 +122,7 @@
       </div>
     </div>
   </footer>
+   <script src="script.js"></script>
   <script src="vendor/bootstrap.bundle.min.js"></script>
 </body>
 
