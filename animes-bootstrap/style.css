@@ -82,14 +82,14 @@ conferindo o RGB, # ou nome das cores o tempo todo. Uma ajudinha pra eu não me 
   border: 3px solid transparent;           /* borda invisível: o degradê aparece por trás dela */
   background:
     linear-gradient(var(--cartao), var(--cartao)) padding-box,                /* 1ª camada: o miolo roxo */
-    linear-gradient(135deg, var(--principal), var(--destaque)) border-box;    /* 2ª camada: o degradê */
+    linear-gradient(135deg, var(--destaque), var(--principal)) border-box;    /* 2ª camada: o degradê */
   overflow: hidden;
     transition: transform 0.2s ease, box-shadow 0.2s ease;  /* Isso aqui vai gerar uma animação nos cards. A mudança acontece em 0,2s, suave, mas divertido
     Sem o transition a mudança é quase instantânea, não fica tão legal. */
 }
 .card:hover { /*Aqui entra a animação ao passar o mouse em cima*/
   transform: translateY(-6px);                     /* move 6px para cima */
-  box-shadow: 0 12px 0 -4px var(--destaque);       /* sombra sólida, estilo cartoon */
+  box-shadow: 0 12px 0 -4px var(--principal);       /* sombra sólida, estilo cartoon */
 }
 /* Títulos das seções: Fredoka mais grossa + risquinho ciano embaixo - Usado no H2 */
 .titulo-secao {
