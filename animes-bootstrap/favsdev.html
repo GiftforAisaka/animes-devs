@@ -1,0 +1,210 @@
+<!--Projeto para aula de Desenvolvimento para internet - Confeccionado usando o bootstrap-->
+<!doctype html>
+<html lang="pt-BR" data-bs-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="vendor/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Luckiest+Guy&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Guia de Animes</title> <!--Aparece na guia do navegador-->
+</head>
+
+<body><!--Elemento pai-->
+  <header><!--filho do body, pai do nav-->
+    <nav class="navbar navbar-expand-lg" aria-label="Navegação principal">
+      <!--Menu de navegação entre as páginas, configurado pelo bootstrap-->
+      <div class="container">
+
+        <a class="navbar-brand" href="index.html">Animes & Devs</a>
+        <!--Nome do site, funciona também como link para o inicio da página-->
+
+        <!--Botão ☰ que abre e fecha o menu no celular (some a partir de 992px) - Mobile first-->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal"
+          aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir ou fechar menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!--Tudo aqui dentro abre e fecha com o botão ☰-->
+        <div class="collapse navbar-collapse" id="menuPrincipal">
+          <ul class="navbar-nav ms-auto">
+            <!--Sobre o projeto, nome dos autores, links com botões que direcionam para o github-->
+            <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+            <!--Página com caixas contendo os projetos anteriores executados nas aulas do professor Felipe-->
+            <li class="nav-item"><a class="nav-link" href="outros-projetos.html">Outros projetos</a></li>
+            <!--Uma aba com indicações de anime, não necessariamente da temporada-->
+            <li class="nav-item"><a class="nav-link" href="favsdev.html">Favoritos dos Devs</a></li>
+            <!--Uma página com mais informações e links de onde assistir como por exemplo netflix e crunchyroll-->
+            <li class="nav-item"><a class="nav-link" href="ondeassistir.html">Onde assistir</a></li>
+          </ul>
+
+          <!--Barra de pesquisa: leva para animestemp.html?pesquisar=texto digitado. Método de pesquisa será implementado em JS-->
+          <form class="d-flex ms-lg-3" action="index.html" method="get" role="search">
+            <label for="pesquisar" class="visually-hidden">Pesquisar</label>
+            <input class="form-control me-2" type="search" id="pesquisar" name="pesquisar"
+              placeholder="pesquisar anime...">
+            <button class="btn btn-primary" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+    <main class="conteudo container pt-5">
+  <section class="mb-5">
+    <h1 class="titulo-secao">Favoritos dos Devs</h1>
+
+    <div class="row g-4">
+
+      <!--Card: Frieren-->
+      <div class="col-12 col-md-6 col-lg-4">
+        <article class="card h-100">
+          <img src="https://otempo.scene7.com/is/image/sempreeditora/critica-3-episodio-de-frieren-desafia-o-shonen-tradicional?qlt=90&ts=1769894553359&dpr=off" class="card-img-top" alt="Arte de Frieren e a Jornada para o Além">
+          <div class="card-body d-flex flex-column">
+            <h2 class="card-title h5">Frieren e a Jornada para o Além</h2>
+            <a href="https://www.crunchyroll.com/pt-br/series/GG5H5XQX4/frieren-beyond-journeys-end" class="text-decoration-none mt-auto" target="_blank" rel="noopener">
+              Assistir aqui<span class="visually-hidden"> Frieren</span> →
+            </a>
+          </div>
+        </article>
+      </div>
+
+      <!--fim do card-->
+      
+      <!--Card: Frieren-->
+      <div class="col-12 col-md-6 col-lg-4">
+        <article class="card h-100">
+          <img src="https://m.media-amazon.com/images/S/pv-target-images/dcb727b9393969200458bb360c7d706560b28924c38a748a7e9815a1a468fd66._SX1080_FMjpg_.jpg" class="card-img-top" alt="Arte de Frieren e a Jornada para o Além">
+          <div class="card-body d-flex flex-column">
+            <h2 class="card-title h5">Akatsuki no Yona</h2>
+            <a href="https://www.crunchyroll.com/pt-br/series/G6VN35J7R/yona-of-the-dawn" class="text-decoration-none mt-auto" target="_blank" rel="noopener">
+              Assistir aqui<span class="visually-hidden">Akatsuki no Yona</span> →
+            </a>
+          </div>
+        </article>
+      </div>
+
+      <!--fim do card-->
+      
+      <!--Card: Frieren-->
+      <div class="col-12 col-md-6 col-lg-4">
+        <article class="card h-100">
+          <img src="img/frieren.png" class="card-img-top" alt="Arte de Frieren e a Jornada para o Além">
+          <div class="card-body d-flex flex-column">
+            <h2 class="card-title h5">Toradora</h2>
+            <a href="COLE-O-LINK-AQUI" class="text-decoration-none mt-auto" target="_blank" rel="noopener">
+              Assistir aqui<span class="visually-hidden"> Toradora</span> →
+            </a>
+          </div>
+        </article>
+      </div>
+
+      <!--fim do card-->
+      
+      <!--Card: Frieren-->
+      <div class="col-12 col-md-6 col-lg-4">
+        <article class="card h-100">
+          <img src="img/frieren.png" class="card-img-top" alt="Arte de Frieren e a Jornada para o Além">
+          <div class="card-body d-flex flex-column">
+            <h2 class="card-title h5">Witch Hat Attelier</h2>
+            <a href="COLE-O-LINK-AQUI" class="text-decoration-none mt-auto" target="_blank" rel="noopener">
+              Assistir aqui<span class="visually-hidden"> Frieren</span> →
+            </a>
+          </div>
+        </article>
+      </div>
+
+      <!--fim do card-->
+      
+      <!--Card: Frieren-->
+      <div class="col-12 col-md-6 col-lg-4">
+        <article class="card h-100">
+          <img src="img/frieren.png" class="card-img-top" alt="Arte de Frieren e a Jornada para o Além">
+          <div class="card-body d-flex flex-column">
+            <h2 class="card-title h5">Full Metal Alchemist</h2>
+            <a href="COLE-O-LINK-AQUI" class="text-decoration-none mt-auto" target="_blank" rel="noopener">
+              Assistir aqui<span class="visually-hidden"> Frieren</span> →
+            </a>
+          </div>
+        </article>
+      </div>
+
+      <!--fim do card-->
+      
+      <!--Card: Frieren-->
+      <div class="col-12 col-md-6 col-lg-4">
+        <article class="card h-100">
+          <img src="img/frieren.png" class="card-img-top" alt="Arte de Frieren e a Jornada para o Além">
+          <div class="card-body d-flex flex-column">
+            <h2 class="card-title h5">Wotakoi</h2>
+            <a href="COLE-O-LINK-AQUI" class="text-decoration-none mt-auto" target="_blank" rel="noopener">
+              Assistir aqui<span class="visually-hidden"> Frieren</span> →
+            </a>
+          </div>
+        </article>
+      </div>
+
+      <!--fim do card-->
+      <!--Card: Frieren-->
+      <div class="col-12 col-md-6 col-lg-4">
+        <article class="card h-100">
+          <img src="img/frieren.png" class="card-img-top" alt="Arte de Frieren e a Jornada para o Além">
+          <div class="card-body d-flex flex-column">
+            <h2 class="card-title h5">Gennkka Shoujo Nozaki Kun</h2>
+            <a href="COLE-O-LINK-AQUI" class="text-decoration-none mt-auto" target="_blank" rel="noopener">
+              Assistir aqui<span class="visually-hidden"> Nozaki</span> →
+            </a>
+          </div>
+        </article>
+      </div>
+
+      <!--fim do card-->
+      <!--Card: Frieren-->
+      <div class="col-12 col-md-6 col-lg-4">
+        <article class="card h-100">
+          <img src="img/frieren.png" class="card-img-top" alt="Arte de Frieren e a Jornada para o Além">
+          <div class="card-body d-flex flex-column">
+            <h2 class="card-title h5">Kaoru hana no rin to saku</h2>
+            <a href="COLE-O-LINK-AQUI" class="text-decoration-none mt-auto" target="_blank" rel="noopener">
+              Assistir aqui<span class="visually-hidden"> Frieren</span> →
+            </a>
+          </div>
+        </article>
+      </div>
+
+      <!--fim do card-->
+      <!--Card: Frieren-->
+      <div class="col-12 col-md-6 col-lg-4">
+        <article class="card h-100">
+          <img src="img/frieren.png" class="card-img-top" alt="Arte de Frieren e a Jornada para o Além">
+          <div class="card-body d-flex flex-column">
+            <h2 class="card-title h5">Tamon's B-Side</h2>
+            <a href="COLE-O-LINK-AQUI" class="text-decoration-none mt-auto" target="_blank" rel="noopener">
+              Assistir aqui<span class="visually-hidden"> Frieren</span> →
+            </a>
+          </div>
+        </article>
+      </div>
+
+      <!--fim do card-->
+
+    </div>
+  </section>
+</main>
+   <footer class="rodape py-4">
+    <!--Elemento pai-->
+    <div class="container">
+      <p class="text-center">Animes & Devs - Thuanne e André</p>
+      <p class="text-center"><a class="text-decoration-none" href="INSERIR GITHUB">Mais projetos aqui</a></p>
+      <p class="text-center">Projeto desenvolvido para matéria de Desenvolvimento para Internet. Utilizando conceitos de
+        media query, mobile
+        first, uso de flexbox e o framework Bootstrap</p>
+    </div>
+  </footer>
+  <script src="vendor/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

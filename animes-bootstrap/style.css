@@ -1,0 +1,194 @@
+/* formatação para destacar o texto do carrossel do bootstrap*/
+.carousel-item::after {
+  content: "";                 /* cria uma "camada" vazia por cima da imagem */
+  position: absolute;          /* posicionada em relação ao slide */
+  left: 0;
+  right: 0;                    /* de ponta a ponta */
+  bottom: 0;                   /* grudada embaixo */
+  height: 60%;                 /* ocupa os 60% de baixo do slide */
+  background: linear-gradient(to top, rgba(0, 0, 0, 1.2), rgba(0, 0, 0, 0));
+  pointer-events: none;        /* não atrapalha clicar nas setas */
+}
+[data-bs-theme] .carousel { /*[data-bs-theme] - usado devido a regra de hierarquia de alteração do conteúdo ex: . (classe) # (id) <> (tag)*/
+  --bs-carousel-caption-color: #fff;
+  --bs-carousel-indicator-active-bg: #fff;
+  --bs-carousel-control-icon-filter: none; /*tira o filtro que escurecia as setas.*/
+}
+.carousel-caption {
+  z-index: 1;                  /* o texto fica POR CIMA do degradê */
+} /* Animes for Devs - carregado DEPOIS do Bootstrap */
+
+/* Paleta de cores do site, gosto de usar o :root pois facilita a marcação e definição de função de cada elemento da página, sem precisar ficar 
+conferindo o RGB, # ou nome das cores o tempo todo. Uma ajudinha pra eu não me perder :) */
+:root {
+  --fundo: #14111f;          /* fundo da página */
+  --texto: #f2eefc;          /* texto */
+  --suave: #b9b0d6;          /* texto secundário */
+  --principal: #ff4f9a;      /* rosa neon: botões, links, logo */
+  --principal-hover: #ff79b4; /*muda de cor quando passa o mouse*/
+  --sobre: #14111f;          /* texto em cima do rosa */
+  --destaque: #3ee6d4;       /* ciano: detalhes */
+  --cartao: #221d33;         /* fundo dos cards */
+  --borda: #3a3254;
+  --barra: #1b1729;          /* menu e rodapé */
+}
+
+/* Aqui - Ensinar o Bootstrap a usar as cores da paleta definida no :root - Isso aqui foi um truquezinho que o claude ensinou =B */
+[data-bs-theme] {
+  --bs-body-bg: var(--fundo);
+  --bs-body-color: var(--texto);
+  --bs-secondary-color: var(--suave);
+  --bs-link-color: var(--principal);
+  --bs-link-hover-color: var(--principal-hover);
+  --bs-border-color: var(--borda);
+  --bs-link-color-rgb: 255, 79, 154;         
+  --bs-link-hover-color-rgb: 255, 121, 180;  
+}
+/*Define as cores dos botões do site. Que tal um pouquinho de rosa neon? */
+.btn-primary {
+  --bs-btn-bg: var(--principal);                    /* fundo */
+  --bs-btn-border-color: var(--principal);          /* borda */
+  --bs-btn-color: var(--sobre);                     /* texto */
+  --bs-btn-hover-bg: var(--principal-hover);        /* fundo com o mouse em cima */
+  --bs-btn-hover-border-color: var(--principal-hover);
+  --bs-btn-hover-color: var(--sobre);
+  --bs-btn-active-bg: var(--principal-hover);       /* fundo no momento do clique */
+  --bs-btn-active-border-color: var(--principal-hover);
+  --bs-btn-active-color: var(--sobre);
+  font-weight: 600;                                 /* texto um pouco mais grosso */
+}
+/* Menu: fundo um pouco diferente da página + linha rosa embaixo - Acho legal deixar o site com uma aparência mais "Cyberpunk 2077" */
+.navbar {
+  background-color: var(--barra);
+  border-bottom: 3px solid var(--principal);
+  --bs-navbar-brand-color: var(--principal);          /* logo rosa */
+  --bs-navbar-brand-hover-color: var(--principal-hover); /* rosa mais claro no hover */
+  --bs-navbar-hover-color: var(--principal);   /* links do menu ficam rosa no hover, antes estava branco e eu acho que assim fica mais bonito */
+}
+/* Link da página atual no menu */
+.navbar .nav-link.active {
+  color: var(--principal);
+  text-decoration: underline;
+  text-underline-offset: 6px;      /* afasta o sublinhado do texto */
+  text-decoration-thickness: 3px;  /* sublinhado mais grosso */
+}
+.carousel-item img {
+  border-radius: 40px;
+}
+/* Cards: borda em degradê rosa → ciano */
+.card {
+  --bs-card-border-radius: 18px;
+  --bs-card-inner-border-radius: 18px;
+  border: 3px solid transparent;           /* borda invisível: o degradê aparece por trás dela */
+  background:
+    linear-gradient(var(--cartao), var(--cartao)) padding-box,                /* 1ª camada: o miolo roxo */
+    linear-gradient(135deg, var(--principal), var(--destaque)) border-box;    /* 2ª camada: o degradê */
+  overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;  /* Isso aqui vai gerar uma animação nos cards. A mudança acontece em 0,2s, suave, mas divertido
+    Sem o transition a mudança é quase instantânea, não fica tão legal. */
+}
+.card:hover { /*Aqui entra a animação ao passar o mouse em cima*/
+  transform: translateY(-6px);                     /* move 6px para cima */
+  box-shadow: 0 12px 0 -4px var(--destaque);       /* sombra sólida, estilo cartoon */
+}
+/* Títulos das seções: Fredoka mais grossa + risquinho ciano embaixo - Usado no H2 */
+.titulo-secao {
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+.titulo-secao::after {
+  content: "";                   
+  display: block;                
+  width: 64px;
+  height: 6px;
+  border-radius: 3px;            
+  background-color: var(--destaque);
+  margin-top: 8px;            
+}
+/* Retícula de bolinhas rosa e ciano no canto superior direito da tela */
+body::before {
+  content: "";                  
+  position: absolute;
+  top: 0;
+  right: 0;                     /* Deixa a imagem presa no canto de cima, à direita*/
+  width: 600px;
+  max-width: 85vw;              /* no máximo 85% da largura da tela. Já ajustado para outros tamanhos */
+  aspect-ratio: 600 / 520;      /* mesma proporção da imagem */
+  background: url("img/bolinhas.svg") top right / contain no-repeat;
+  z-index: -1;                  /* fica ATRÁS do conteúdo */
+  pointer-events: none;         /* não atrapalha cliques */
+}
+body {
+  font-family: "Fredoka", sans-serif;
+  /*Pra deixar o fundo mais animado/bonito, e não ficar espaço morto/sobrando dos lados*/
+    background-image:
+    radial-gradient(circle at 0% 25%, rgba(255, 79, 154, 0.18), transparent 35%),   /* brilho rosa, esquerda */
+    radial-gradient(circle at 100% 75%, rgba(62, 230, 212, 0.14), transparent 35%), /* brilho ciano, direita */
+    radial-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px);                /* pontinhos */
+  background-size: auto, auto, 22px 22px;   /* os pontinhos se repetem a cada 22px */
+  background-attachment: fixed;             /* o fundo fica parado enquanto a página rola */
+}
+
+.navbar-brand {
+  font-family: "Luckiest Guy", cursive;
+  font-size: 1.6rem;
+  text-shadow: 3px 3px 0 var(--destaque);   /* sombra: 3px pra direita, 3px pra baixo, sem desfoque. Deixa um contorno azul no rosa pra destacar o texto*/
+}
+
+.card-img-top { /*Deixa todas as imagens dos cards com o mesmo tamanho, evita desconfigurações e mantém a estética mais bonita*/
+  aspect-ratio: 16 / 9;    /* formato de tela de TV/vídeo */
+  object-fit: cover;       /* preenche o espaço cortando as sobras, em vez de esticar */
+  transition: filter 0.3s ease;   /*para adicionar um fade ao passar o mouse pela imagem dos cards*/
+}
+.card:hover .card-img-top {
+  filter: brightness(0.6);           /* mexer no 0.6 aumenta ou diminui o fade*/
+}
+.rodape {
+  background-color: var(--barra);
+  border-top: 3px solid var(--principal);
+  color: var(--suave);             
+  position: relative;
+}
+
+/* Mascote em pé sobre a linha rosa do rodapé */
+.mascote {
+  position: absolute;     /* posicionada em relação ao rodapé */
+  bottom: 100%;           /* a base dela fica no topo do rodapé = em cima da linha */
+  right: 3%;              /* no canto direito */
+  width: 110px;           /* tamanho no celular */
+  margin-bottom: -2px;    /* encosta os pés na linha */
+  pointer-events: none;   /* não atrapalha clicar no que estiver atrás dela */
+}
+/* Posteres da pagina animestemp*/
+.card-poster .card-img-top {
+  aspect-ratio: 2 / 3;
+}
+/* Caixa escura e translúcida que fica atrás do sobre, melhora a visualização do texto */
+.caixa-texto {
+  background-color: rgba(20, 17, 31, 0.85);   /* o roxo do fundo com 85% de opacidade */
+  border: 2px solid var(--borda);
+  border-radius: 18px;
+  padding: 2rem;
+}
+/* Um pouco maior a partir do notebook */
+@media (min-width: 992px) {
+  .mascote {
+    width: 160px;
+  }
+}
+@media (min-width:777px){
+  .mascote{
+    width: 200px;
+  }
+}
+
+/* Pensando em acessibilidade e enjoo de movimento, por exemplo, vamos adicionar uma regra que tira o movimento dos cards pra quem quiser selecionar
+essa opção,ok?*/
+@media (prefers-reduced-motion: reduce) {
+  .card {
+    transition: none;
+  }
+  .card:hover {
+    transform: none;
+  }
+}
