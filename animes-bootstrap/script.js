@@ -3,5 +3,5 @@
 // colocando em prática muitas das ideias que eu tinha lá atrás e que ainda não sabia executar. Essa daqui é uma delas
 function avisoBusca() {
   alert("Ei, essa função ainda não está ativa, mas em breve estará!");
-  return false; // false = "não envie o formulário", então a página não recarrega
+  return false; // false = "não envie o formulário", então a página não recarrega. A intenção é só mostrar a imagem no alert!
 }
