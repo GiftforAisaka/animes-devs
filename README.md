@@ -38,7 +38,7 @@ Escrevemos a estrutura HTML do site à mão, com base nas aulas, em cursos da Al
 ## Estrutura de pastas
 
 ```
-animes-bootstrap/
+Atividade4/
 ├── index.html
 ├── sobre.html
 ├── favsdev.html
@@ -54,8 +54,8 @@ animes-bootstrap/
 
 Antes de implementar, a Aula 13 pede dois esboços do site, um para computador e outro para celular, com as seis áreas da página, a posição das imagens e a função de cada controle:
 
-- [Esboço para computador](animes-bootstrap/esbocos/esboco-computador.svg)
-- [Esboço para celular](animes-bootstrap/esbocos/esboco-celular.svg)
+- [Esboço para computador](Atividade4/esbocos/esboco-computador.svg)
+- [Esboço para celular](Atividade4/esbocos/esboco-celular.svg)
 
 ## Registro dos componentes
 
@@ -69,7 +69,7 @@ Uma frase para cada componente do Bootstrap usado no site, como pede a atividade
 
 ## Como rodar
 
-Não é preciso instalar nada. Basta clonar ou baixar o repositório e abrir o arquivo `animes-bootstrap/index.html` no navegador.
+Não é preciso instalar nada. Basta clonar ou baixar o repositório e abrir o arquivo `Atividade4/index.html` no navegador.
 
 Se preferir, use a extensão **Live Server** do VS Code para recarregar a página automaticamente a cada alteração.
 

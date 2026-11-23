@@ -1,4 +1,4 @@
-# Publica a pasta animes-bootstrap/ no GitHub Pages a cada push na main.
+# Publica a pasta Atividade4/ no GitHub Pages a cada push na main.
 name: Publicar no GitHub Pages
 
 on:
@@ -26,6 +26,6 @@ jobs:
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: animes-bootstrap
+          path: Atividade4
       - id: deployment
         uses: actions/deploy-pages@v4
