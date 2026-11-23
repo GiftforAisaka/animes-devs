@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xml:lang="pt-BR" width="880" height="2110" viewBox="0 0 880 2110">
+  <title>Esboço para celular — Animes &amp; Devs</title>
+  <desc>Wireframe da página inicial (index.html) do site Animes &amp; Devs em telas menores que 992px. As seis áreas da Aula 13 ficam empilhadas em uma coluna: o menu vira o botão ☰ e os cards ficam um embaixo do outro. À direita, o que cada controle faz.</desc>
+
+  <defs>
+    <linearGradient id="sombra" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1f1d2b" stop-opacity="0"/>
+      <stop offset="1" stop-color="#1f1d2b" stop-opacity="0.75"/>
+    </linearGradient>
+    <clipPath id="recorteCarrossel">
+      <rect x="64" y="462" width="312" height="176" rx="16"/>
+    </clipPath>
+  </defs>
+
+  <style>
+    text { font-family: 'Segoe UI', Arial, Helvetica, sans-serif; font-size: 14px; fill: #2b2b3a; }
+    .titulo { font-size: 26px; font-weight: 700; }
+    .sub { fill: #5a5a70; }
+    .leg { font-size: 13px; fill: #5a5a70; }
+    .tag { font-size: 12px; font-weight: 700; fill: #ff4f9a; letter-spacing: 0.6px; }
+    .tag-extra { font-size: 12px; font-weight: 700; fill: #8a8aa0; letter-spacing: 0.6px; }
+    .marca { font-size: 22px; font-weight: 700; fill: #ff4f9a; letter-spacing: 0.5px; }
+    .ph { font-size: 13px; fill: #9a9aa8; }
+    .lbl { font-size: 13px; fill: #7a7a90; }
+    .h1 { font-size: 28px; font-weight: 700; }
+    .h2 { font-size: 22px; font-weight: 700; }
+    .p { font-size: 16px; fill: #4a4a60; }
+    .cap { font-size: 22px; font-weight: 700; fill: #ffffff; }
+    .card-t { font-size: 15px; font-weight: 700; }
+    .link { font-weight: 700; fill: #ff4f9a; }
+    .btn-t { font-size: 15px; font-weight: 700; fill: #14111f; }
+    .rod-a { font-size: 15px; font-weight: 700; }
+    .rod-l { fill: #ff4f9a; }
+    .rod-t { font-size: 13px; fill: #5a5a70; }
+    .rod-s { font-size: 12px; fill: #5a5a70; }
+    .obs { font-size: 13px; font-style: italic; fill: #7a7a90; }
+    .nota-t { font-weight: 700; fill: #ff4f9a; }
+    .nota-t-extra { font-weight: 700; fill: #6a6a80; }
+    .nota { fill: #3d3d52; }
+
+    .moldura { fill: #ffffff; stroke: #9a9aa8; stroke-width: 2; }
+    .area { fill: #f6f6f9; stroke: #d5d5df; stroke-width: 1.5; }
+    .barra { fill: #efeef5; stroke: #d5d5df; stroke-width: 1.5; }
+    .linha-rosa { stroke: #ff4f9a; stroke-width: 3; }
+    .img { fill: #e9e9ef; stroke: #b9b9c7; stroke-width: 1.5; }
+    .x { stroke: #cfcfda; stroke-width: 1.5; }
+    .txt { fill: #dcdbe5; }
+    .card { fill: #ffffff; stroke: #b9b9c7; stroke-width: 1.5; }
+    .btn { fill: #ff4f9a; }
+    .campo { fill: #ffffff; stroke: #b9b9c7; stroke-width: 1.5; }
+    .ciano { fill: #3ee6d4; }
+    .controle { fill: #ffffff; stroke: #b9b9c7; stroke-width: 1.5; }
+    .seta { fill: none; stroke: #2b2b3a; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+    .mascote { fill: #e9e9ef; stroke: #b9b9c7; stroke-width: 1.5; }
+    .nota-box { fill: #fff7fb; stroke: #ffc2dc; stroke-width: 1.5; }
+    .nota-box-extra { fill: #f7f7fa; stroke: #d5d5df; stroke-width: 1.5; }
+    .guia { fill: none; stroke: #8a8aa0; stroke-width: 1.5; stroke-dasharray: 5 4; }
+    .ponto { fill: #8a8aa0; }
+    .ind { fill: #ffffff; }
+    .ind-off { fill: #ffffff; fill-opacity: 0.5; }
+    .pill { fill: #ffffff; stroke: #d5d5df; stroke-width: 1.5; }
+    .tracejado { fill: #ffffff; stroke: #8a8aa0; stroke-width: 1.5; stroke-dasharray: 5 4; }
+    .hamb { stroke: #2b2b3a; stroke-width: 2.5; stroke-linecap: round; }
+  </style>
+
+  <rect x="0" y="0" width="880" height="2110" fill="#ffffff"/>
+
+  <!-- ===== Cabeçalho da folha ===== -->
+  <text x="40" y="46" class="titulo">Animes &amp; Devs — esboço para celular</text>
+  <text x="40" y="72" class="sub">Página inicial (index.html) em telas menores que 992px: tudo fica em uma coluna.</text>
+  <rect x="40" y="86" width="26" height="16" class="img"/>
+  <line x1="40" y1="86" x2="66" y2="102" class="x"/>
+  <line x1="66" y1="86" x2="40" y2="102" class="x"/>
+  <text x="74" y="99" class="leg">imagem</text>
+  <rect x="140" y="86" width="26" height="16" rx="4" class="btn"/>
+  <text x="174" y="99" class="leg">botão</text>
+  <line x1="228" y1="94" x2="262" y2="94" class="guia"/>
+  <circle cx="228" cy="94" r="4" class="ponto"/>
+  <text x="270" y="99" class="leg">liga a anotação ao elemento</text>
+
+  <!-- ===== Celular ===== -->
+  <rect x="40" y="115" width="360" height="1951" rx="36" class="moldura"/>
+  <rect x="180" y="127" width="80" height="8" rx="4" fill="#d5d5df"/>
+  <rect x="170" y="2046" width="100" height="5" rx="2.5" fill="#d5d5df"/>
+
+  <!-- 1 · MENU (recolhido) -->
+  <rect x="52" y="147" width="336" height="70" class="barra"/>
+  <line x1="52" y1="217" x2="388" y2="217" class="linha-rosa"/>
+  <text x="64" y="166" class="tag">1 · MENU</text>
+  <text x="64" y="201" class="marca" style="font-size:19px">ANIMES &amp; DEVS</text>
+  <rect x="332" y="175" width="42" height="32" rx="6" class="campo"/>
+  <line x1="343" y1="184" x2="363" y2="184" class="hamb"/>
+  <line x1="343" y1="191" x2="363" y2="191" class="hamb"/>
+  <line x1="343" y1="198" x2="363" y2="198" class="hamb"/>
+
+  <!-- 2 · APRESENTAÇÃO -->
+  <rect x="52" y="233" width="336" height="180" rx="12" class="area"/>
+  <text x="64" y="254" class="tag">2 · APRESENTAÇÃO</text>
+  <text x="220" y="288" text-anchor="middle" class="h1" style="font-size:21px">Um projeto Acadêmico</text>
+  <text x="220" y="314" text-anchor="middle" class="h1" style="font-size:21px">pensado na comunidade Geek</text>
+  <text x="220" y="342" text-anchor="middle" class="p" style="font-size:14px">Um guia de temporadas feito</text>
+  <text x="220" y="360" text-anchor="middle" class="p" style="font-size:14px">especialmente pra você!</text>
+  <rect x="145" y="372" width="150" height="36" rx="8" class="btn"/>
+  <text x="220" y="396" text-anchor="middle" class="btn-t">Ver destaques</text>
+
+  <!-- 3 · DESTAQUES / CARROSSEL -->
+  <rect x="52" y="429" width="336" height="223" rx="12" class="area"/>
+  <text x="64" y="450" class="tag">3 · DESTAQUES / CARROSSEL</text>
+  <rect x="64" y="462" width="312" height="176" rx="16" class="img"/>
+  <line x1="80" y1="476" x2="360" y2="624" class="x"/>
+  <line x1="360" y1="476" x2="80" y2="624" class="x"/>
+  <g clip-path="url(#recorteCarrossel)">
+    <rect x="64" y="568" width="312" height="70" fill="url(#sombra)"/>
+  </g>
+  <rect x="150" y="516" width="140" height="24" rx="12" class="pill"/>
+  <text x="220" y="533" text-anchor="middle" class="lbl" style="font-size:12px">arte do anime</text>
+  <text x="220" y="612" text-anchor="middle" class="cap" style="font-size:15px">Nome do anime</text>
+  <rect x="154" y="625" width="18" height="3" class="ind"/>
+  <rect x="177" y="625" width="18" height="3" class="ind-off"/>
+  <rect x="200" y="625" width="18" height="3" class="ind-off"/>
+  <rect x="223" y="625" width="18" height="3" class="ind-off"/>
+  <rect x="246" y="625" width="18" height="3" class="ind-off"/>
+  <rect x="269" y="625" width="18" height="3" class="ind-off"/>
+  <circle cx="88" cy="550" r="15" class="controle"/>
+  <polyline points="92,543 85,550 92,557" class="seta"/>
+  <circle cx="352" cy="550" r="15" class="controle"/>
+  <polyline points="348,543 355,550 348,557" class="seta"/>
+
+  <!-- 4 · INFORMAÇÕES COMPLEMENTARES -->
+  <rect x="52" y="668" width="336" height="200" rx="12" class="area"/>
+  <text x="64" y="689" class="tag">4 · INFORMAÇÕES COMPLEMENTARES</text>
+  <text x="64" y="720" class="h2" style="font-size:19px">Sobre o projeto</text>
+  <rect x="64" y="729" width="40" height="4" rx="2" class="ciano"/>
+  <rect x="64" y="744" width="300" height="7" rx="3.5" class="txt"/>
+  <rect x="64" y="759" width="290" height="7" rx="3.5" class="txt"/>
+  <rect x="64" y="774" width="305" height="7" rx="3.5" class="txt"/>
+  <rect x="64" y="789" width="180" height="7" rx="3.5" class="txt"/>
+  <rect x="64" y="806" width="300" height="7" rx="3.5" class="txt"/>
+  <rect x="64" y="821" width="295" height="7" rx="3.5" class="txt"/>
+  <rect x="64" y="836" width="270" height="7" rx="3.5" class="txt"/>
+  <rect x="64" y="851" width="150" height="7" rx="3.5" class="txt"/>
+
+  <!-- 5 · COLEÇÃO / CARDS (uma coluna) -->
+  <rect x="52" y="884" width="336" height="712" rx="12" class="area"/>
+  <text x="64" y="905" class="tag">5 · COLEÇÃO / CARDS</text>
+  <text x="64" y="936" class="h2" style="font-size:19px">Destaques da Temporada</text>
+  <rect x="64" y="945" width="40" height="4" rx="2" class="ciano"/>
+
+  <g transform="translate(64,962)">
+    <rect width="312" height="286" rx="14" class="card"/>
+    <rect x="10" y="10" width="292" height="164" rx="8" class="img"/>
+    <line x1="22" y1="22" x2="290" y2="162" class="x"/>
+    <line x1="290" y1="22" x2="22" y2="162" class="x"/>
+    <text x="14" y="198" class="card-t">Anime 1</text>
+    <rect x="14" y="210" width="270" height="7" rx="3.5" class="txt"/>
+    <rect x="14" y="224" width="260" height="7" rx="3.5" class="txt"/>
+    <rect x="14" y="238" width="200" height="7" rx="3.5" class="txt"/>
+    <text x="14" y="270" class="link">Assistir aqui →</text>
+  </g>
+  <g transform="translate(64,1264)">
+    <rect width="312" height="286" rx="14" class="card"/>
+    <rect x="10" y="10" width="292" height="164" rx="8" class="img"/>
+    <line x1="22" y1="22" x2="290" y2="162" class="x"/>
+    <line x1="290" y1="22" x2="22" y2="162" class="x"/>
+    <text x="14" y="198" class="card-t">Anime 2</text>
+    <rect x="14" y="210" width="270" height="7" rx="3.5" class="txt"/>
+    <rect x="14" y="224" width="260" height="7" rx="3.5" class="txt"/>
+    <rect x="14" y="238" width="200" height="7" rx="3.5" class="txt"/>
+    <text x="14" y="270" class="link">Assistir aqui →</text>
+  </g>
+  <text x="220" y="1578" text-anchor="middle" class="obs">… demais cards seguem em coluna (6 no total)</text>
+
+  <!-- EXTRA · FAVORITOS DOS DEVS -->
+  <rect x="52" y="1612" width="336" height="162" rx="12" class="area"/>
+  <text x="64" y="1633" class="tag-extra">EXTRA · FAVORITOS DOS DEVS</text>
+  <text x="64" y="1664" class="h2" style="font-size:19px">Favoritos dos Devs</text>
+  <rect x="64" y="1673" width="40" height="4" rx="2" class="ciano"/>
+  <text x="64" y="1696" class="p" style="font-size:13px">Indicação dos animes favoritos dos</text>
+  <text x="64" y="1713" class="p" style="font-size:13px">desenvolvedores pra você aproveitar!</text>
+  <rect x="64" y="1726" width="210" height="34" rx="6" class="btn"/>
+  <text x="169" y="1748" text-anchor="middle" class="btn-t" style="font-size:14px">Ver os favoritos dos Devs</text>
+
+  <!-- Mascote (menor no celular) -->
+  <circle cx="348" cy="1814" r="15" class="mascote"/>
+  <rect x="334" y="1828" width="28" height="30" rx="9" class="mascote"/>
+  <rect x="338" y="1856" width="7" height="12" rx="2" class="mascote"/>
+  <rect x="351" y="1856" width="7" height="12" rx="2" class="mascote"/>
+
+  <!-- 6 · RODAPÉ -->
+  <rect x="52" y="1870" width="336" height="160" class="barra"/>
+  <line x1="52" y1="1870" x2="388" y2="1870" class="linha-rosa"/>
+  <text x="64" y="1893" class="tag">6 · RODAPÉ</text>
+  <text x="220" y="1920" text-anchor="middle" class="rod-a" style="font-size:14px">Animes &amp; Devs - Thuanne e André</text>
+  <text x="220" y="1942" text-anchor="middle" class="rod-l" style="font-size:13px">Mais projetos aqui | E aqui</text>
+  <text x="220" y="1964" text-anchor="middle" class="rod-t" style="font-size:12px">Projeto desenvolvido para a matéria de</text>
+  <text x="220" y="1980" text-anchor="middle" class="rod-t" style="font-size:12px">Desenvolvimento para Internet (Bootstrap)</text>
+  <text x="220" y="2002" text-anchor="middle" class="rod-s" style="font-size:11px">Imagens: artes oficiais de divulgação. Fontes:</text>
+  <text x="220" y="2016" text-anchor="middle" class="rod-s" style="font-size:11px">Crunchyroll, Prime Video e Netflix · Mascote: Canva</text>
+
+  <!-- ===== Anotações: o que cada área e cada controle faz ===== -->
+
+  <!-- 1 · MENU -->
+  <line x1="440" y1="167" x2="378" y2="191" class="guia"/>
+  <circle cx="378" cy="191" r="4" class="ponto"/>
+  <g transform="translate(440,147)">
+    <rect width="400" height="241" rx="10" class="nota-box"/>
+    <text x="14" y="24" class="nota-t">1 · MENU</text>
+    <text x="14" y="48" class="nota">Os links somem e aparece o botão ☰.</text>
+    <text x="14" y="68" class="nota">Tocar no ☰ abre o menu (desenho abaixo), com os</text>
+    <text x="14" y="88" class="nota">links empilhados. Tocar de novo fecha.</text>
+    <rect x="14" y="103" width="372" height="126" rx="8" class="tracejado"/>
+    <text x="26" y="121" class="lbl" style="font-size:12px">menu aberto</text>
+    <text x="26" y="145">Sobre</text>
+    <text x="26" y="167">Outros projetos</text>
+    <text x="26" y="189">Favoritos dos Devs</text>
+    <text x="26" y="211">Onde assistir</text>
+  </g>
+
+  <!-- 2 · APRESENTAÇÃO -->
+  <line x1="440" y1="450" x2="299" y2="390" class="guia"/>
+  <circle cx="299" cy="390" r="4" class="ponto"/>
+  <g transform="translate(440,430)">
+    <rect width="400" height="82" rx="10" class="nota-box"/>
+    <text x="14" y="24" class="nota-t">2 · APRESENTAÇÃO</text>
+    <text x="14" y="48" class="nota">Título, frase e botão, um embaixo do outro.</text>
+    <text x="14" y="68" class="nota">Ver destaques rola a página até os cards.</text>
+  </g>
+
+  <!-- 3 · DESTAQUES / CARROSSEL -->
+  <line x1="440" y1="550" x2="371" y2="550" class="guia"/>
+  <circle cx="371" cy="550" r="4" class="ponto"/>
+  <g transform="translate(440,530)">
+    <rect width="400" height="82" rx="10" class="nota-box"/>
+    <text x="14" y="24" class="nota-t">3 · DESTAQUES / CARROSSEL</text>
+    <text x="14" y="48" class="nota">O carrossel ocupa a largura da tela.</text>
+    <text x="14" y="68" class="nota">‹ › continuam trocando o slide só no clique.</text>
+  </g>
+
+  <!-- 4 · INFORMAÇÕES COMPLEMENTARES -->
+  <line x1="440" y1="710" x2="392" y2="740" class="guia"/>
+  <circle cx="392" cy="740" r="4" class="ponto"/>
+  <g transform="translate(440,690)">
+    <rect width="400" height="82" rx="10" class="nota-box"/>
+    <text x="14" y="24" class="nota-t">4 · INFORMAÇÕES COMPLEMENTARES</text>
+    <text x="14" y="48" class="nota">Mesmo texto do computador, em uma coluna.</text>
+    <text x="14" y="68" class="nota">Perguntas frequentes: na página Sobre.</text>
+  </g>
+
+  <!-- 5 · COLEÇÃO / CARDS -->
+  <line x1="440" y1="1230" x2="194" y2="1228" class="guia"/>
+  <circle cx="194" cy="1228" r="4" class="ponto"/>
+  <g transform="translate(440,1210)">
+    <rect width="400" height="102" rx="10" class="nota-box"/>
+    <text x="14" y="24" class="nota-t">5 · COLEÇÃO / CARDS</text>
+    <text x="14" y="48" class="nota">Os cards ficam um embaixo do outro (1 coluna)</text>
+    <text x="14" y="68" class="nota">e os 6 continuam aparecendo. Assistir aqui abre</text>
+    <text x="14" y="88" class="nota">o anime na Crunchyroll em nova aba.</text>
+  </g>
+
+  <!-- EXTRA · FAVORITOS DOS DEVS -->
+  <polyline points="440,1660 420,1743 279,1743" class="guia"/>
+  <circle cx="279" cy="1743" r="4" class="ponto"/>
+  <g transform="translate(440,1640)">
+    <rect width="400" height="62" rx="10" class="nota-box-extra"/>
+    <text x="14" y="24" class="nota-t-extra">EXTRA · FAVORITOS DOS DEVS</text>
+    <text x="14" y="48" class="nota">O botão leva à página favsdev.html.</text>
+  </g>
+
+  <!-- 6 · RODAPÉ -->
+  <line x1="440" y1="1830" x2="366" y2="1840" class="guia"/>
+  <circle cx="366" cy="1840" r="4" class="ponto"/>
+  <line x1="440" y1="1868" x2="392" y2="1950" class="guia"/>
+  <circle cx="392" cy="1950" r="4" class="ponto"/>
+  <g transform="translate(440,1800)">
+    <rect width="400" height="82" rx="10" class="nota-box"/>
+    <text x="14" y="24" class="nota-t">6 · RODAPÉ</text>
+    <text x="14" y="48" class="nota">Texto centralizado: autoria, links do GitHub e</text>
+    <text x="14" y="68" class="nota">fontes das imagens. Mascote menor no canto.</text>
+  </g>
+
+  <!-- Resumo -->
+  <g transform="translate(440,1930)">
+    <rect width="400" height="102" rx="10" class="nota-box-extra"/>
+    <text x="14" y="24" class="nota-t-extra">RESUMO</text>
+    <text x="14" y="48" class="nota">Nada some no celular: o que no computador fica</text>
+    <text x="14" y="68" class="nota">lado a lado (links do menu e cards) passa a ficar</text>
+    <text x="14" y="88" class="nota">empilhado, um embaixo do outro.</text>
+  </g>
+</svg>
