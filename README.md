@@ -20,16 +20,16 @@ Escrevemos a estrutura HTML do site à mão, com base nas aulas, em cursos da Al
 | Página | Arquivo | Conteúdo |
 | --- | --- | --- |
 | Início | `index.html` | Carrossel com os destaques da temporada, apresentação do projeto e cards com sinopse de cada anime |
-| Sobre | `sobre.html` | Quem somos e como foi fazer o projeto |
+| Sobre | `sobre.html` | Quem somos, como foi fazer o projeto e perguntas frequentes (accordion) |
 | Favoritos dos Devs | `favsdev.html` | Nossas recomendações pessoais, com link para assistir |
-| Outros projetos | `outros-projetos.html` | Projetos anteriores da disciplina *(em construção)* |
-| Onde assistir | `ondeassistir.html` | Plataformas de streaming *(em construção)* |
+| Outros projetos | `outros-projetos.html` | Projetos anteriores da disciplina |
+| Onde assistir | `ondeassistir.html` | Plataformas de streaming onde dá para assistir os animes |
 
 ## Tecnologias e conceitos
 
 - **HTML5** semântico (`header`, `nav`, `main`, `section`, `article`, `footer`)
 - **CSS3** com variáveis no `:root` para a paleta de cores
-- **Bootstrap 5.3.8** (arquivos locais na pasta `vendor/`): grid, navbar, carrossel e cards
+- **Bootstrap 5.3.8** (arquivos locais na pasta `vendor/`): grid, navbar, botões, cards, carrossel e accordion
 - **Mobile first** e **media queries**: o menu vira o botão ☰ em telas menores que 992px
 - **Flexbox**
 - **Acessibilidade**: textos alternativos nas imagens, `aria-label`, textos para leitores de tela (`visually-hidden`) e respeito a `prefers-reduced-motion`
@@ -44,10 +44,18 @@ animes-bootstrap/
 ├── favsdev.html
 ├── outros-projetos.html
 ├── ondeassistir.html
-├── style.css           # nosso CSS, carregado depois do Bootstrap
-├── img/                # imagens dos animes e mascote
+├── estilo.css          # nosso CSS, carregado depois do Bootstrap
+├── imagens/            # imagens dos animes e mascote
+├── esbocos/            # esboços do site para computador e celular
 └── vendor/             # Bootstrap (CSS e JS)
 ```
+
+## Esboços
+
+Antes de implementar, a Aula 13 pede dois esboços do site, um para computador e outro para celular, com as seis áreas da página, a posição das imagens e a função de cada controle:
+
+- [Esboço para computador](animes-bootstrap/esbocos/esboco-computador.svg)
+- [Esboço para celular](animes-bootstrap/esbocos/esboco-celular.svg)
 
 ## Como rodar
 
@@ -59,9 +67,7 @@ Se preferir, use a extensão **Live Server** do VS Code para recarregar a págin
 
 ## Próximos passos
 
-- Implementar a barra de pesquisa com JavaScript
-- Preencher as páginas "Onde assistir" e "Outros projetos"
-- Adicionar o link do GitHub no rodapé
+- Criar uma barra de pesquisa de animes com JavaScript
 
 ## Créditos
 

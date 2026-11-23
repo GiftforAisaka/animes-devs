@@ -116,7 +116,7 @@ body::before {
   width: 600px;
   max-width: 85vw;              /* no máximo 85% da largura da tela. Já ajustado para outros tamanhos */
   aspect-ratio: 600 / 520;      /* mesma proporção da imagem */
-  background: url("img/bolinhas.svg") top right / contain no-repeat;
+  background: url("imagens/bolinhas.svg") top right / contain no-repeat;
   z-index: -1;                  /* fica ATRÁS do conteúdo */
   pointer-events: none;         /* não atrapalha cliques */
 }

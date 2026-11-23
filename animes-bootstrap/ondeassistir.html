@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Luckiest+Guy&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="estilo.css">
   <title>Animes & Devs</title> <!--Aparece na guia do navegador-->
 </head>
 
@@ -41,14 +41,6 @@
             <!--Uma página com mais informações e links de onde assistir como por exemplo netflix e crunchyroll-->
             <li class="nav-item"><a class="nav-link active" href="ondeassistir.html" aria-current="page">Onde assistir</a></li>
           </ul>
-
-          <!--Barra de pesquisa: Ainda não está funcionando, precisa de um pouco mais de JS que ainda não sei...-->
-          <form class="d-flex ms-lg-3" action="index.html" method="get" role="search" onsubmit="return avisoBusca()">
-            <label for="pesquisar" class="visually-hidden">Pesquisar</label>
-            <input class="form-control me-2" type="search" id="pesquisar" name="pesquisar"
-              placeholder="pesquisar anime...">
-            <button class="btn btn-primary" type="submit" id="pesquisarcont">Buscar</button>
-          </form>
         </div>
       </div>
     </nav>
@@ -105,7 +97,7 @@
 </main>
     <footer class="rodape py-4"> <!--Elemento pai-->
     <!--Mascote decorativa, em pé sobre a linha rosa-->
-    <img class="mascote" src="img/mascote.png" alt="">
+    <img class="mascote" src="imagens/mascote.png" alt="">
     <div class="container text-center">
         <p class="text-center">Animes & Devs - Thuanne e André</p>
         <p class="text-center"><a class="text-decoration-none" href="https://github.com/GiftforAisaka" target="_blank" rel="noopener">Mais projetos aqui</a></p>
@@ -120,7 +112,6 @@
           </p>
       </div>
   </footer>
-   <script src="script.js"></script>
   <script src="vendor/bootstrap.bundle.min.js"></script>
 </body>
 
